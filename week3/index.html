@@ -17,8 +17,11 @@
       }
       
       h1 {
-        color: white;
-        text-align: center;
+  margin: 0 0 50px 0;
+      }
+
+      h2 {
+        margin: 20px 0 0 0;
       }
       
       div.try{
@@ -79,6 +82,13 @@
       <div class="try">
       <p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
       </div>
+
+            
+      <p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. So, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+
     
       <br>
       <a href="https://www.freepik.com/free-vector/seamless-pattern_2403529.htm#query=background%20pattern&position=5&from_view=keyword">Image by visnezh</a> on Freepik
