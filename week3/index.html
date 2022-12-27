@@ -21,17 +21,20 @@
         text-align: center;
       }
       
-      h4.dotted {border-style: dotted;}
-      h4.dashed {border-style: dashed;}
-      h4.solid {border-style: solid;}
-      h4.double {border-style: double;}
-      h4.groove {border-style: groove;}
-      h4.ridge {border-style: ridge;}
-      p.inset {border-style: inset;}
-      p.outset {border-style: outset;}
-      p.none {border-style: none;}
-      p.hidden {border-style: hidden;}
-      p.mix {border-style: dotted dashed solid double;}
+      p.one {
+  border-style: solid;
+  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+    }
+
+    p.two {
+      border-style: solid;
+      border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+    }
+
+    p.three {
+      border-style: solid;
+      border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+    }
 
     </style>
 </head>
@@ -81,18 +84,14 @@
       <br>
       <h3>CSS - Section 4: Borders</h3>
 
-      <h4 class="dotted" style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h4>
-      <h4 class="dashed" style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h4>
-      <h4 class="solid" style="background-color:#b4b4b4;">#b4b4b4</h4>
-      <h4 class="double" style="background-color:#787878;">#787878</h4>
-      <h4 class="groove" style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h4>
-      <h4 class="ridge" style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h4>
-      <p class="inset">An inset border.</p>
-      <p class="outset">An outset border.</p>
-      <p class="none">No border.</p>
-      <p class="hidden">A hidden border.</p>
-      <p class="mix">A mixed border.</p>
-      
+      <h2>The border-width Property</h2>
+      <p>The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border):</p>
+
+      <p class="one">Some text.</p>
+      <p class="two">Some text.</p>
+      <p class="three">Some text.</p>
+
+    
       <br>
       <a href="https://www.freepik.com/free-vector/seamless-pattern_2403529.htm#query=background%20pattern&position=5&from_view=keyword">Image by visnezh</a> on Freepik
   </div>
