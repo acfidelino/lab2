@@ -37,6 +37,7 @@ a.btn:hover, a.btn:active {
   background-color: red;
 }
 */
+/*
 ul.a {
   list-style-type: circle;
 }
@@ -52,4 +53,7 @@ ol.c {
 ol.d {
   list-style-type: lower-alpha;
 }
-
+*/
+table, th, td {
+  border: 1px solid !important;
+}
