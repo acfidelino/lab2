@@ -54,6 +54,15 @@ ol.d {
   list-style-type: lower-alpha;
 }
 */
-table, th, td {
-  border: 1px solid !important;
+table, td, th {
+  border: 1px solid black !important;
+}
+
+table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+}
+
+th {
+  height: 70px !important;
 }
