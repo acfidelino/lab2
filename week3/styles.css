@@ -37,15 +37,13 @@ a.btn:hover, a.btn:active {
   background-color: red;
 }
 */
-table, td, th {
-  border: 1px solid black !important;
-}
-
 table {
   border-collapse: collapse !important;
   width: 100% !important;
 }
 
-th {
+th, td {
+  padding: 8px !important;
   text-align: left !important;
+  border-bottom: 1px solid #ddd !important;
 }
