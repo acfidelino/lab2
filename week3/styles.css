@@ -37,23 +37,6 @@ a.btn:hover, a.btn:active {
   background-color: red;
 }
 */
-/*
-ul.a {
-  list-style-type: circle;
-}
-
-ul.b {
-  list-style-type: square;
-}
-
-ol.c {
-  list-style-type: upper-roman;
-}
-
-ol.d {
-  list-style-type: lower-alpha;
-}
-*/
 table, td, th {
   border: 1px solid black !important;
 }
@@ -64,5 +47,5 @@ table {
 }
 
 th {
-  height: 70px !important;
+  text-align: left !important;
 }
