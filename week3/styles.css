@@ -24,12 +24,18 @@ p {
   color: rgb(92, 87, 87) !important;  
 }
 
-div.ex {
-  background-color: coral;
-  width: 200px;
-  height: 65px;
-  border: 1px solid black;
-  overflow: auto;
+.navi {
+  background-color: yellow; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navi li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
 }
 /*
 a.btn:link, a.btn:visited {
