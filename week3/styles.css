@@ -12,10 +12,28 @@ font-family: Verdana, sans-serif !important;
 font-size: 16px !important; 
 }
 
-img.try {
-  float: right;
+.div1 {
+  float: left;
+  padding: 10px;
+  border: 3px solid #73AD21;
 }
 
+.div2 {
+  padding: 10px;
+  border: 3px solid red;
+}
+
+.div3 {
+  float: left;
+  padding: 10px;  
+  border: 3px solid #73AD21;
+}
+
+.div4 {
+  padding: 10px;
+  border: 3px solid red;
+  clear: left;
+}
 /* WILL USE ONCE BETTER OUTPUTS ARE ASKED */
 /***
 
