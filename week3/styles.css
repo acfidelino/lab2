@@ -24,18 +24,12 @@ p {
   color: rgb(92, 87, 87) !important;  
 }
 
-.navi {
-  background-color: yellow; 
-  list-style-type: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.navi li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
+.centerx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green; 
 }
 /*
 a.btn:link, a.btn:visited {
