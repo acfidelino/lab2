@@ -13,18 +13,15 @@ font-size: 16px !important;
 counter-reset: section;
 }
 
-#myid {
-  background-color: blue;
+#div1 {
+  position: absolute;
+  left: 50px;
+  width: calc(100% - 100px);
+  border: 1px solid black;
+  background-color: yellow;
+  padding: 5px;
 }
-
-.myclass {
-  background-color: gray;
-}
-
-p {
-  background-color: red !important;
-}
-}/* WILL USE ONCE BETTER OUTPUTS ARE ASKED */
+/* WILL USE ONCE BETTER OUTPUTS ARE ASKED */
 /***
 
 h1 {
