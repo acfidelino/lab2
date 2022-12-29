@@ -24,12 +24,8 @@ p {
   color: rgb(92, 87, 87) !important;  
 }
 
-.centerx {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  border: 3px solid green; 
+img:hover {
+  opacity: 0.5;
 }
 /*
 a.btn:link, a.btn:visited {
