@@ -13,13 +13,16 @@ font-size: 16px !important;
 counter-reset: section;
 }
 
-h1 {
-  font-size: 60px;
+#myid {
+  background-color: blue;
+}
+
+.myclass {
+  background-color: gray;
 }
 
 p {
-  font-size: 25px;
-  line-height: 50px;
+  background-color: red !important;
 }
 }/* WILL USE ONCE BETTER OUTPUTS ARE ASKED */
 /***
