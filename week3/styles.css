@@ -23,6 +23,10 @@ p {
   text-align: justify !important;
   color: rgb(92, 87, 87) !important;  
 }
+
+li {
+  display: inline;
+}
 /*
 a.btn:link, a.btn:visited {
   background-color: #f44336;
@@ -37,15 +41,3 @@ a.btn:hover, a.btn:active {
   background-color: red;
 }
 */
-
-table {
-  border-collapse: collapse !important;
-  width: 100% !important;
-}
-
-th, td {
-  text-align: left !important;
-  padding: 8px !important;
-}
-
-tr:nth-child(even) {background-color: #f2f2f2 !important;}
