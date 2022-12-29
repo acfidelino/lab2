@@ -60,7 +60,7 @@
         
 <hr>
     <div class="container" style="background-image: url('bg.jpg'); background-repeat: repeat; background-size: 75%; background-attachment: scroll;">
-      <h1 class="bg-info">Lesson 14.2: Visi & Layout - Position</h1>
+      <h1 class="bg-info">Lesson 14.3: Visi & Layout - Z-index</h1>
       <p class="mine" style="background-color: aqua; opacity: 0.75; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus volutpat est, hendrerit dignissim tellus pharetra id. Curabitur eu velit pretium, rhoncus felis ut, posuere dolor. Vivamus ornare turpis tellus, efficitur hendrerit tortor gravida sit amet. Phasellus libero dolor, rhoncus ut dui ac, commodo faucibus risus. Curabitur pharetra tellus leo, et tempor odio sagittis vitae. Aenean faucibus turpis turpis, eget finibus magna egestas venenatis. Phasellus turpis eros, volutpat in mattis vel, porttitor dapibus dolor. Vivamus at dignissim justo, et pulvinar nunc. Sed porttitor nisi urna. Maecenas erat risus, dapibus at leo ut, vulputate cursus lacus. Suspendisse ante ligula, tristique a velit ut, tincidunt cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec bibendum ex a ex fringilla mollis.</p>
       <br>
       
@@ -76,13 +76,16 @@
         
       <br>
       
-<h2>position: static;</h2>
 
-<p>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+      <h1>Z-index Example</h1>
 
-<div class="static">
-This div element has position: static;
-</div>
+      <p>An element with greater stack order is always above an element with a lower stack order.</p>
+      
+      <div class="containerx">
+        <div class="black-box">Black box (z-index: 1)</div>
+        <div class="gray-box">Gray box (z-index: 3)</div>
+        <div class="green-box">Green box (z-index: 2)</div>
+      </div>
 
       <br>
       <a href="https://www.freepik.com/free-vector/seamless-pattern_2403529.htm#query=background%20pattern&position=5&from_view=keyword">Image by visnezh</a> on Freepik
