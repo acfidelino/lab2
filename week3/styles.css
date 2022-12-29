@@ -10,18 +10,12 @@ body {
 background-color: lightblue !important;
 font-family: Verdana, sans-serif !important;
 font-size: 16px !important; 
+counter-reset: section;
 }
 
-#home {
-  width: 46px;
-  height: 44px;
-  background: url(sou.jpg) 0 0;
-}
-
-#next {
-  width: 43px;
-  height: 44px;
-  background: url(Chogakusei.jpg) -91px 0;
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
 }
 /* WILL USE ONCE BETTER OUTPUTS ARE ASKED */
 /***
