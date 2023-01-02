@@ -60,39 +60,29 @@
         
 <hr>
     <div class="container" style="background-image: url('bg.jpg'); background-repeat: repeat; background-size: 75%; background-attachment: scroll;">
-      <h1 class="bg-info">Lesson 20.2: Img Gallery</h1>
+      <h1 class="bg-info">Lesson 20.3: Forms</h1>
       <p class="mine" style="background-color: aqua; opacity: 0.75; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus volutpat est, hendrerit dignissim tellus pharetra id. Curabitur eu velit pretium, rhoncus felis ut, posuere dolor. Vivamus ornare turpis tellus, efficitur hendrerit tortor gravida sit amet. Phasellus libero dolor, rhoncus ut dui ac, commodo faucibus risus. Curabitur pharetra tellus leo, et tempor odio sagittis vitae. Aenean faucibus turpis turpis, eget finibus magna egestas venenatis. Phasellus turpis eros, volutpat in mattis vel, porttitor dapibus dolor. Vivamus at dignissim justo, et pulvinar nunc. Sed porttitor nisi urna. Maecenas erat risus, dapibus at leo ut, vulputate cursus lacus. Suspendisse ante ligula, tristique a velit ut, tincidunt cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec bibendum ex a ex fringilla mollis.</p>
       <br>
 
-      <div class="gallery">
-        <a target="_blank" href="sou.jpg">
-          <img src="sou.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
+      <div class="content">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        
+          <input type="submit" value="Submit">
+        </form>
       </div>
       
-      <div class="gallery">
-        <a target="_blank" href="Chogakusei.jpg">
-          <img src="Chogakusei.jpg" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-      
-      <div class="gallery">
-        <a target="_blank" href="mafu.jpg">
-          <img src="mafu.jpg" alt="Northern Lights" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-      
-      <div class="gallery">
-        <a target="_blank" href="king_chou_avatar.png">
-          <img src="king_chou_avatar.png" alt="Mountains" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-      <br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br>
       
 
       <!--
