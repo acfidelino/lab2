@@ -12,24 +12,16 @@ font-family: Verdana, sans-serif !important;
 font-size: 16px !important; 
 }
 
-#grad1 {
-  height: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(red, yellow);
+#shad {
+  text-shadow: 2px 2px gold;
 }
 
-#grad2 {
-  height: 150px;
-  width: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: radial-gradient(red, yellow, green);
-}
-
-#grad3 {
-  height: 200px;
-  width: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: conic-gradient(red, yellow, green, blue, black);
+#bx-shad {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px 5px lightblue;
 }
 
 /* WILL USE ONCE BETTER OUTPUTS ARE ASKED */
