@@ -6,22 +6,58 @@ p.mine {
   
 }
 
-body {
+/*body {
 background-color: lightblue !important;
 font-family: Verdana, sans-serif !important;
 font-size: 16px !important; 
 }
+*/
 
-#shad {
-  text-shadow: 2px 2px gold;
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff; 
 }
 
-#bx-shad {
-  width: 300px;
-  height: 100px;
+body {
+  background-color: var(--blue);
+}
+
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+.container {
+  color: var(--blue);
+  background-color: var(--white);
   padding: 15px;
-  background-color: coral;
-  box-shadow: 10px 10px 5px lightblue;
+}
+
+.btn1 {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 5px;
+}
+
+.btn2 {
+  --button-blue: #0000ff; /* new local variable */
+  background-color: var(--white);
+  color: var(--button-blue);
+  border: 1px solid var(--button-blue);
+  padding: 5px;
+}
+
+.container2 {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 15px;
+  font-size: var(--fontsize);
+}
+
+@media screen and (min-width: 450px) {
+  .container {
+    --fontsize: 50px;
+  }
 }
 
 /* WILL USE ONCE BETTER OUTPUTS ARE ASKED */
