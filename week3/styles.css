@@ -6,59 +6,84 @@ p.mine {
   
 }
 
-/*body {
+body {
 background-color: lightblue !important;
 font-family: Verdana, sans-serif !important;
 font-size: 16px !important; 
 }
-*/
 
-:root {
-  --blue: #1e90ff;
-  --white: #ffffff; 
+.flex-b {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
 }
 
-body {
-  background-color: var(--blue);
+.flex-b > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }
 
-h2 {
-  border-bottom: 2px solid var(--blue);
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
 }
 
-.container {
-  color: var(--blue);
-  background-color: var(--white);
-  padding: 15px;
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
 }
 
-.btn1 {
-  background-color: var(--white);
-  color: var(--blue);
-  border: 1px solid var(--blue);
-  padding: 5px;
+.flex-cont-items {
+  display: flex;
+  background-color: #f1f1f1;
 }
 
-.btn2 {
-  --button-blue: #0000ff; /* new local variable */
-  background-color: var(--white);
-  color: var(--button-blue);
-  border: 1px solid var(--button-blue);
-  padding: 5px;
+.flex-cont-items > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }
 
-.container2 {
-  color: var(--blue);
-  background-color: var(--white);
-  padding: 15px;
-  font-size: var(--fontsize);
+* {
+  box-sizing: border-box;
 }
 
-@media screen and (min-width: 450px) {
-  .container {
-    --fontsize: 50px;
+.flex-cont-resp {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-cont-resp {
+    flex-direction: column;
   }
 }
+
 
 /* WILL USE ONCE BETTER OUTPUTS ARE ASKED */
 /***
