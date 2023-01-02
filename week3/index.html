@@ -60,16 +60,25 @@
         
 <hr>
     <div class="container" style="background-image: url('bg.jpg'); background-repeat: repeat; background-size: 75%; background-attachment: scroll;">
-      <h1 class="bg-info">Lesson 19.3: Horizontal Navbar</h1>
+      <h1 class="bg-info">Lesson 20.1: Dropdown</h1>
       <p class="mine" style="background-color: aqua; opacity: 0.75; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus volutpat est, hendrerit dignissim tellus pharetra id. Curabitur eu velit pretium, rhoncus felis ut, posuere dolor. Vivamus ornare turpis tellus, efficitur hendrerit tortor gravida sit amet. Phasellus libero dolor, rhoncus ut dui ac, commodo faucibus risus. Curabitur pharetra tellus leo, et tempor odio sagittis vitae. Aenean faucibus turpis turpis, eget finibus magna egestas venenatis. Phasellus turpis eros, volutpat in mattis vel, porttitor dapibus dolor. Vivamus at dignissim justo, et pulvinar nunc. Sed porttitor nisi urna. Maecenas erat risus, dapibus at leo ut, vulputate cursus lacus. Suspendisse ante ligula, tristique a velit ut, tincidunt cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec bibendum ex a ex fringilla mollis.</p>
       <br>
 
       <ul>
-        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
       </ul>
+
+      <h3>Dropdown Menu inside a Navigation Bar</h3>
+      <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
       
 
       <!--
