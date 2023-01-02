@@ -64,189 +64,20 @@
       <p class="mine" style="background-color: aqua; opacity: 0.75; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus volutpat est, hendrerit dignissim tellus pharetra id. Curabitur eu velit pretium, rhoncus felis ut, posuere dolor. Vivamus ornare turpis tellus, efficitur hendrerit tortor gravida sit amet. Phasellus libero dolor, rhoncus ut dui ac, commodo faucibus risus. Curabitur pharetra tellus leo, et tempor odio sagittis vitae. Aenean faucibus turpis turpis, eget finibus magna egestas venenatis. Phasellus turpis eros, volutpat in mattis vel, porttitor dapibus dolor. Vivamus at dignissim justo, et pulvinar nunc. Sed porttitor nisi urna. Maecenas erat risus, dapibus at leo ut, vulputate cursus lacus. Suspendisse ante ligula, tristique a velit ut, tincidunt cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec bibendum ex a ex fringilla mollis.</p>
       <br>
 
-      <h1>21.1: Rounded Corners</h1>
-      <h2>The border-radius Property</h2>
-      
-      <p>Rounded corners for an element with a specified background color:</p>
-      <p id="rcorners1">Rounded corners!</p>
-      <p>Rounded corners for an element with a border:</p>
-      <p id="rcorners2">Rounded corners!</p>
-      <p>Rounded corners for an element with a background image:</p>
-      <p id="rcorners3">Rounded corners!</p>
+      <h1>22.1: Linear Gradient</h1>
+      <h2>Linear Gradient - Top to Bottom</h2>
+      <p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+      <div id="grad1"></div>
       <hr>
       
-      <h1>21.2: Border Images</h1>
-      <h2>The border-image Property</h2>
-      <p>Here, the middle sections of the image are repeated to create the border:</p>
-      <p id="borderimg">border-image: url(border.png) 30 round;</p>
-      <p>Here is the original image:</p><img src="border.png">
-      <p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+      <h1>22.2: Radial Gradient</h1>
+      <h2>Radial Gradient - Evenly Spaced Color Stops</h2>
+      <div id="grad2"></div>
       <hr>
       
-      <h1>21.3: Backgrounds</h1>
-      <h2>Multiple Backgrounds</h2>
-      <p>The following div element has two background images:</p>
-      <div id="example1">
-        <h1>Lorem Ipsum Dolor</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-      </div>
-      <hr>
-      
-      <h1>21.4: Colors</h1>
-      <h2>Define Colors With RGBA Values</h2>
-      <p id="p1">Red</p>
-      <p id="p2">Green</p>
-      <p id="p3">Blue</p>
-      <p id="p4">Grey</p>
-      <p id="p5">Yellow</p>
-      <p id="p6">Cerise</p>
-      <hr>
-
-      <h1>21.5: Color Keywords</h1>
-      <h2>The transparent Keyword</h2>
-      <div class="ex1">This div has a light green background.</div>
-      <br>
-      <div class="ex2">This div has a transparent background.</div>
-      <hr>
-      
-      <h1>21.6: Text Effects </h1>
-      <h2>The text-overflow Property</h2>
-      <p>The following two paragraphs contains a long text that will not fit in the box.</p>
-      <h3>text-overflow: clip:</h3>
-      <p class="test1">This is some long text that will not fit in the box</p>
-      <h3>text-overflow: ellipsis:</h3>
-      <p class="test2">This is some long text that will not fit in the box</p>
-      <hr>
-
-      <h1>21.7: Web Fonts</h1>
-      <h2>The @font-face Rule</h2>
-      <div>
-      With CSS, websites can use <b>fonts other than the pre-selected "web-safe" fonts</b>.
-      </div>
-      <hr>
-
-      <h1>21.8: 2D Animations</h1>
-      <h2>The translate() Method</h2>
-      <p>The translate() method moves an element from its current position:</p>
-      <div>
-      This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
-      </div>
-      <hr>
-    
-      <h1>21.9: 3D Transforms</h1>
-      <h2>The rotateX() Method</h2>
-      <p>The rotateX() method rotates an element around its X-axis at a given degree.</p>
-      <div class="selection">
-      This a normal div element.
-      </div>
-      <div class="selection" id="myDiv">
-        This div element is rotated 150 degrees.
-      </div>
-      <hr>
-      
-      <h1>21.10: Transition</h1>
-      <h2>The transition Property</h2>
-      <p>Hover over the div element below, to see the transition effect:</p>
-      <div></div>
-      <hr>
-      
-      <h1>21.11: Animations</h1>
-      <h2>CSS Animation</h2>
-      <div class="animBox"></div>
-      <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
-      <hr>
-
-      <h1>21.12: Tooltip</h1>
-      <h2>Basic Tooltip</h2>
-      <p>Move the mouse over the text below:</p>
-      <div class="tooltip">Hover over me
-        <span class="tooltiptext">Tooltip text</span>
-      </div>
-      <p>Note that the position of the tooltip text isn't very good. Go back to the tutorial and continue reading on how to position the tooltip in a desirable way.</p>
-      <hr>
-      
-      <h1>21.13: Styling Images</h1>
-      <h2>Circled Image</h2>
-      <p>Use the border-radius property to create circled images:</p>
-      <img id="rnd" src="sou.jpg" alt="Paris" width="300" height="300">
-      <hr>
-      
-      <h1>21.14: Image Reflection</h1>
-      <p>Show the reflection below the image:</p>
-      <div style="margin-bottom: 75px;">
-        <img id="ref" src="aries-ram.jpg">
-      </div>
-      <br><hr>
-      
-      <h1>21.15: Object Fit</h1>
-      <h2>Using object-fit: cover</h2>
-      <img id="of-cover" src="king_chou_avatar.png" alt="Paris" width="400" height="300">
-      <hr>
-      
-      <h1>21.16: Object Position:</h1>
-      <p>Here we will use the object-position property to position the man in the image to the right side:</p>
-      <img id="of-c-p" src="king_chou_avatar.png" alt="Paris" width="400" height="300">
-      <hr>
-      
-      <h1>21.17: Masking</h1>
-      <h2>The mask-image Property</h2>
-      <h3>An image with a mask layer image:</h3>
-      <div class="mask1">
-      <img src="sky.jpg" alt="Cinque Terre" width="400" height="200">
-      </div>
-      <h3>Original image:</h3>
-      <img src="sky.jpg" alt="Cinque Terre" width="400" height="200">
-      <hr>
-      
-      <h1>21.18: Buttons</h1>
-      <h2>CSS Buttons</h2>
-      <button>Default Button</button>
-      <a href="#" class="button">Link Button</a>
-      <button class="button">Button</button>
-      <input type="button" class="button" value="Input Button">      
-      <hr>
-      
-      <h1>21.19: Pagination</h1>
-      <h2>Simple Pagination</h2>
-      
-      <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">&raquo;</a>
-      </div>
-      <hr>
-      
-      <h1>21.20: Multiple Columns</h1>
-      <h2>Create Multiple Columns</h2>
-      <div class="newspaper">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-      </div>
-      <hr>
-      
-      <h1>21.21: User Interface</h1>
-      <h2>The resize Property</h2>
-      <div id="resz">
-        <p>Let the user resize only the width of this div element.</p>
-        <p>To resize: Click and drag the bottom right corner of this div element.</p>
-      </div>
-      <hr>
-      
-      <h1>21.22: Box Sizing</h1>
-      <h2>Without box-sizing</h2>
-      <div class="div1">This div is smaller (width is 300px and height is 100px).</div>
-      <br>
-      <div class="div2">This div is bigger (width is also 300px and height is 100px).</div>
-      <hr>
-      
-      <h1>21.23: Media Query</h1>
-      <h1>Resize the browser window to see the effect!</h1>
-      <p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider</p>
+      <h1>22.1: Linear Gradient</h1>
+      <h2>Conic Gradient - Five Colors</h2>
+      <div id="grad3"></div>
       <hr>
 
       
