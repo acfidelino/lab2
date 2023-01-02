@@ -42,6 +42,232 @@ div.content {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+#rcorners1 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners3 {
+  border-radius: 25px;
+  background: url(bg.jpg);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+
+#example1 {
+  background-image: url(img_flwr.gif), url(paper.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+
+#p1 {background-color:rgba(255,0,0,0.3);}
+#p2 {background-color:rgba(0,255,0,0.3);}
+#p3 {background-color:rgba(0,0,255,0.3);}
+#p4 {background-color:rgba(192,192,192,0.3);}
+#p5 {background-color:rgba(255,255,0,0.3);}
+#p6 {background-color:rgba(255,0,255,0.3);}
+
+div.ex1 { 
+  background-color: lightgreen;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+div.ex2 { 
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 15px;
+} 
+
+p.test1 {
+  white-space: nowrap; 
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+p.test2 {
+  white-space: nowrap; 
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_bold.woff);
+  font-weight: bold;
+}
+
+* {
+  font-family: myFirstFont;
+}
+
+div.selection {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+#myDiv {
+  transform: rotateX(150deg);
+}
+
+div.transBox {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div.transBox:hover {
+  width: 300px;
+}
+
+div.animBox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#rnd {border-radius: 50%;}
+#ref {-webkit-box-reflect: below; width: 150px;}
+
+#of-cover {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#of-c-p {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 35% 60%;
+}
+
+.mask1 {
+  -webkit-mask-image: url(w3logo.png);
+  mask-image: url(w3logo.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.newspaper {
+  column-count: 3;
+}
+
+#resz {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: horizontal;
+  overflow: auto;
+}
+
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;  
+  padding: 50px;
+  border: 1px solid red;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
 /* WILL USE ONCE BETTER OUTPUTS ARE ASKED */
 /***
 
