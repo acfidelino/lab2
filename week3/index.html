@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/8cbc507dd9.js" crossorigin="anonymous"></script>
@@ -40,7 +42,7 @@
 </style>
 </head>
 
-<body>
+<body class="w3-light-grey">
 <!-- PROFILE PORTION -->
 <div class="container bg-body">
     <div class="bg-light">
@@ -78,62 +80,252 @@
         
 <hr>
     <div class="container" style="background-image: url('bg.jpg'); background-repeat: repeat; background-size: 75%; background-attachment: scroll;">
-      <h1 class="bg-info">Lesson 25: Flexbox -- Compiled</h1>
+      <h1 class="bg-info">Lesson 26: Responsive Web Design -- Compiled</h1>
       <p class="mine" style="background-color: aqua; opacity: 0.75; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus volutpat est, hendrerit dignissim tellus pharetra id. Curabitur eu velit pretium, rhoncus felis ut, posuere dolor. Vivamus ornare turpis tellus, efficitur hendrerit tortor gravida sit amet. Phasellus libero dolor, rhoncus ut dui ac, commodo faucibus risus. Curabitur pharetra tellus leo, et tempor odio sagittis vitae. Aenean faucibus turpis turpis, eget finibus magna egestas venenatis. Phasellus turpis eros, volutpat in mattis vel, porttitor dapibus dolor. Vivamus at dignissim justo, et pulvinar nunc. Sed porttitor nisi urna. Maecenas erat risus, dapibus at leo ut, vulputate cursus lacus. Suspendisse ante ligula, tristique a velit ut, tincidunt cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec bibendum ex a ex fringilla mollis.</p>
       <br>
       
-      <h1>25.1: Flexbox</h1>
-      <h2>New Local Variable</h2>
-      <div class="container">
-        <h1>Flexible Boxes</h1>
-        <div class="flex-b">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>  
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>  
-          <div>7</div>
-          <div>8</div>
+      <h1>26.1: RWD Intro</h1>
+      <div class="header">
+        <h1>Chania</h1>
+      </div>     
+      <div class="row">
+        <div class="col-3 col-s-3 menu">
+          <ul>
+            <li>The Flight</li>
+            <li>The City</li>
+            <li>The Island</li>
+            <li>The Food</li>
+          </ul>
         </div>
-        <p>Try to resize the browser window.</p>
-        <p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
-        <p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
-      <hr>
-
-      <h1>25.2: Flex Container</h1>
-      <h1>Create a Flex Container</h1>
-      <div class="flex-container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>  
-      </div>
-      <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
-      <hr>
       
-      <h1>25.3: Flex Items</h1>
-      <h1>Flexible Items</h1>
-      <div class="flex-cont-items">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div> 
-        <div>4</div>
-      </div>
-      <p>All direct children of a flexible container becomes flexible items.</p>
-      <hr>
+        <div class="col-6 col-s-9">
+          <h1>The City</h1>
+          <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+        </div>
       
-      <h1>24.4: Responsive Flexbox</h1>
-      <p>The "flex-direction: row;" stacks the flex items horizontally (from left to right).</p>
-      <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom).</p>
-      <p><b>Resize the browser window to see that the direction changes when the 
-      screen size is 800px wide or smaller.</b></p>
-      <div class="flex-cont-resp">
-        <div class="flex-item-left">1</div>
-        <div class="flex-item-right">2</div>
+        <div class="col-3 col-s-12">
+          <div class="aside">
+            <h2>What?</h2>
+            <p>Chania is a city on the island of Crete.</p>
+            <h2>Where?</h2>
+            <p>Crete is a Greek island in the Mediterranean Sea.</p>
+            <h2>How?</h2>
+            <p>You can reach Chania airport from all over Europe.</p>
+          </div>
+        </div>
+      </div> 
+      <div class="footer">
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
       </div>
       <hr>
 
+      <h1>26.2: RWD Viewport</h1>
+      No code snippet. Viewport added in the head. <br>
+      <code> < meta name="viewport" content="width=device-width, initial-scale=1.0 > </code>
+      <hr>
       
+      <h1>26.3: RWD Grid</h1>
+      <div class="header2"> <h1>Chania</h1> </div> 
+      <div class="menu2">
+        <ul>
+          <li>The Flight</li>
+          <li>The City</li>
+          <li>The Island</li>
+          <li>The Food</li>
+        </ul>
+      </div>
+      <div class="main2">
+        <h1>The City</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+      </div>
+      <hr>
+      
+      <h1>26.4: RWD Media Query</h1>
+      <p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "lightgreen".</p>
+      <hr>
+      
+      <h1>26.5: RWD Images</h1>
+      <img src="mafu.jpg" width="200" height="auto">
+      <p>Resize the browser window to see how the image will scale.</p>      
+      <hr>
+
+      <h1>26.6: RWD Videos</h1>
+      <video width="400" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML5 video.
+      </video>
+      <p>Resize the browser window to see how the size of the video player will scale.</p>
+      <hr>
+      
+      <h1>26.7: RWD Frameworks</h1>
+      <div class="w3-container w3-blue">
+        <h1>W3Schools Demo</h1> 
+        <p>Resize this responsive page!</p> 
+      </div>
+      
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <h2>London</h2>
+          <p>London is the capital city of England.</p>
+          <p>It is the most populous city in the United Kingdom,
+          with a metropolitan area of over 13 million inhabitants.</p>
+        </div>
+      
+        <div class="w3-third">
+          <h2>Paris</h2>
+          <p>Paris is the capital of France.</p> 
+          <p>The Paris area is one of the largest population centers in Europe,
+          with more than 12 million inhabitants.</p>
+        </div>
+      
+        <div class="w3-third">
+          <h2>Tokyo</h2>
+          <p>Tokyo is the capital of Japan.</p>
+          <p>It is the center of the Greater Tokyo Area,
+          and the most populous metropolitan area in the world.</p>
+        </div>
+      </div>
+      <hr>
+      
+      <h1>26.8: RWD Template</h1>
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-32"> 
+    <h1><b>MY BLOG</b></h1>
+    <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
+  </header>
+  
+  <!-- Grid -->
+  <div class="w3-row">
+  
+  <!-- Blog entries -->
+  <div class="w3-col l8 s12">
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
+      <div class="w3-container">
+        <h3><b>TITLE HEADING</b></h3>
+        <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+      </div>
+  
+      <div class="w3-container">
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          </div>
+          <div class="w3-col m4 w3-hide-small">
+            <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+    <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container">
+        <h3><b>BLOG ENTRY</b></h3>
+        <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+      </div>
+  
+      <div class="w3-container">
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          </div>
+          <div class="w3-col m4 w3-hide-small">
+            <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- END BLOG ENTRIES -->
+  </div>
+  
+  <!-- Introduction menu -->
+  <div class="w3-col l4">
+    <!-- About Card -->
+    <div class="w3-card w3-margin w3-margin-top">
+    <img src="/w3images/avatar_g.jpg" style="width:100%">
+      <div class="w3-container w3-white">
+        <h4><b>My Name</b></h4>
+        <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+      </div>
+    </div><hr>
+    
+    <!-- Posts -->
+    <div class="w3-card w3-margin">
+      <div class="w3-container w3-padding">
+        <h4>Popular Posts</h4>
+      </div>
+      <ul class="w3-ul w3-hoverable w3-white">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+        <li class="w3-padding-16">
+          <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Dorum</span><br>
+          <span>Ultricies congue</span>
+        </li>   
+        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+          <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Mingsum</span><br>
+          <span>Lorem ipsum dipsum</span>
+        </li>  
+      </ul>
+    </div>
+    <hr> 
+   
+    <!-- Labels / tags -->
+    <div class="w3-card w3-margin">
+      <div class="w3-container w3-padding">
+        <h4>Tags</h4>
+      </div>
+      <div class="w3-container w3-white">
+      <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+      </div>
+    </div>
+    
+  <!-- END Introduction Menu -->
+  </div>
+  
+  <!-- END GRID -->
+  </div><br>
+  
+  <!-- END w3-content -->
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+    <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+    <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>  
+  <hr>
+
+
       <!--
         SEEMINGLY USEFUL HTML SNIPPETS
         <h2>Link Button</h2>
