@@ -22,6 +22,10 @@
   .nav-link{
     color: #FFFFFF !important;
   }
+
+  body{
+    background-color: #1D2951 !important;
+  }
     
   body a:hover{
     color: rgba(255, 255, 255, 0.7) !important;
@@ -31,8 +35,7 @@
    background-image: url('../media/sky.png');
    height: 100vh !important;
    background-size: cover;
-   background-position-y: 41rem;
-   
+   background-position-y: 41rem;  
   }
 
   .card-color {
@@ -42,4 +45,12 @@
 
   .btn-primary{
     background-color: #4281A4 !important;
+  }
+
+  .card-bg{
+    height: inherit;
+    object-fit: cover;
+    opacity: 0.2;
+    object-position: 50% 36%;
+    filter: blur(4px);
   }
