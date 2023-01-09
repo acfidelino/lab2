@@ -1,0 +1,28 @@
+body{
+    background-image: url('../media/design-space-paper-textured-background.jpg') !important;
+}
+
+.overlay{
+    background-color: rgb(29, 41, 81, 0.65) !important;
+}
+
+.w3-padding > h4, header{
+    color: white;
+}
+
+.highlight{
+    background-color: #4281A4 !important;
+}
+
+.nav-link{
+    color: #FFFFFF !important;
+}
+
+body a:hover{
+color: rgba(255, 255, 255, 0.7) !important;
+}
+  
+
+.separator{
+    color: lightgray;
+}

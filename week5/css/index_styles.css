@@ -1,0 +1,44 @@
+.overlay {
+  background-color: rgba(29, 41, 81, 0.7);
+  position: absolute;
+  top: 62px; /* height of the navbar */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.caro-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.caro-img-cont{
+  position: relative;
+  height: 100vh;
+}
+
+.content-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 62px;  /* height of the navbar */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.nav-link{
+  color: #FFFFFF !important;
+}
+
+.carousel-caption > a{
+  text-decoration: none;
+  color: white;
+}
+
+body a:hover{
+  color: rgba(255, 255, 255, 0.7) !important;
+}
