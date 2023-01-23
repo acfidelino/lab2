@@ -15,7 +15,24 @@
         .nav-link{
             color:white ;
         }
+        #ch1Text {
+          white-space: pre-wrap; /* or pre-line */
+        }
     </style>
+    <script>
+      function typeText(element, text) {
+        let i = 0;
+        const speed = 20; // delay in ms between each character
+        function type() {
+          if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+          }
+        }
+        type();
+      }
+    </script>
 </head>
 <body>
     <!--NAVBAR-->
@@ -48,6 +65,80 @@
 
 <div class="container m-3">
 
+  <div class="card" style="justify-content: center;">
+    <div class="card-body">
+      <h5 class="card-title">A Child's Adventure</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Chapter 1</h6>
+      <p class="card-text" id="ch1Text"></p>
+      <button type="button" class="btn btn-outline-secondary choice1-btn" id="ch1Go">Go</button>
+      <button type="button" class="btn btn-outline-secondary choice1-btn" id="ch1Not">Not Go</button>
+    </div>
+  </div>
+
+  <script>
+    var element = document.getElementById("ch1Text");
+    var longText = "The village was bestowed by the king of Mertienza to the greatest person who will win the war against the forest dwellers found only in the deepest caves and shades after the great Narra tree. These creatures can be seen walking in four limbs, sometimes three, sometimes one. Some fly, some gallop, and some develop to be human.! “That’s what I’ve heard from my ma and pa. Although they would need some blood of human to take form, they would look pretty much like ma and pa with extra limbs or wings.” I told my friends as we walk around a mango, spotting a ripe mango not far from the ground.! “Juan, Juan, come now! We need to get meat for the vegetables tonight.” I heard my ma call.";
+    var textWithLineBreaks = longText.replace(/\!/g, "\n\n");
+    typeText(element, textWithLineBreaks);
+
+  </script>
+    <!--#JS L6-->
+    <br id="whitespace">
+    <script>
+      const lnbrk = document.createElement("br");
+      const node = document.createTextNode("");
+      lnbrk.appendChild(node);
+
+      const element2 = document.getElementById("whitespace");
+      element2.appendChild(para);
+    </script>
+
+    <script>
+    const buttons = document.getElementsByClassName("choice1-btn");
+    var ctr =0
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function() {
+            if (this.id === 'ch1Go' && ctr==0) {
+                const hiddenCard1 = document.getElementById("deci1-go").style.display = "block";
+                ctr++;
+              } else if (this.id === 'ch1Not' && ctr==0) {
+              const hiddenCard1 = document.getElementById("deci1-not").style.display = "block";
+              ctr++;
+            }
+        });
+    }
+    </script>
+
+<div class="card" style="width: 18rem; display: none;" id="deci1-go">
+  <div class="card-body">
+    <h5 class="card-title">[Go]</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Go to mom</h6>
+    <p class="card-text" id="gotomom"></p>
+  </div>
+</div>
+
+<script>
+  element = document.getElementById("gotomom");
+  longText = "Without saying goodbye, I left the area and headed straight to the door, getting a basket from the floor, making sure nothing is inside it before racing to reach my ma’s hand and walked to the village pantry together.";
+  textWithLineBreaks = longText.replace(/\!/g, "\n\n");
+  typeText(element, textWithLineBreaks);
+</script>
+
+<div class="card" style="width: 18rem; display: none;" id="deci1-not">
+  <div class="card-body">
+    <h5 class="card-title">[Not Go]</h5>
+    <h6 class="card-subtitle mb-2 text-muted"></h6>
+    <p class="card-text" id="notgotomom"></p>
+  </div>
+</div>
+<script>
+  element = document.getElementById("notgotomom");
+  longText = "“I’ll be playing more Ma, maybe a bit later.” I told Mama outside the door.!“Alright, later then. I was thinking of buying you a toy but I guess we can’t if you don’t want to come with me.” Mama said, I know for sure that she is joking but a toy sounds tempting right now.!“Wait for me!” I said as she was walking to the market with a basket by her side.";
+  textWithLineBreaks = longText.replace(/\!/g, "\n\n");
+  typeText(element, textWithLineBreaks);
+</script>
+
+    <hr>
     <h1>Lesson 1: Compiled </h1>
     <hr>
 
@@ -115,6 +206,8 @@
     document.getElementById("myH").innerHTML = "L1.7: Comments | JavaScript Comments";
     document.getElementById("myP").innerHTML = "My first paragraph.";
     </script>
+
+
 
 
 
