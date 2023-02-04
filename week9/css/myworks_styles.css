@@ -1,0 +1,56 @@
+.overlay {
+    background-color: rgba(29, 41, 81, 0.7);
+    position: absolute;
+    top: 62px; /* height of the navbar */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .content-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 62px;  /* height of the navbar */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  
+  .nav-link{
+    color: #FFFFFF !important;
+  }
+
+  body{
+    background-color: #1D2951 !important;
+  }
+    
+  body a:hover{
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+
+  .bg-img{
+   background-image: url('../media/sky.png');
+   height: 100vh !important;
+   background-size: cover;
+   background-position-y: 41rem;  
+  }
+
+  .card-color {
+    background-color: #1D2951 !important;
+    color: #FFFFFF !important;
+  }
+
+  .btn-primary{
+    background-color: #4281A4 !important;
+  }
+
+  .card-bg{
+    height: inherit;
+    object-fit: cover;
+    opacity: 0.2;
+    object-position: 50% 36%;
+    filter: blur(4px);
+  }
