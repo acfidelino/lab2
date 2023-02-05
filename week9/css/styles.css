@@ -1,0 +1,35 @@
+.bordered-cont{
+    border: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.heading{
+    color: #3D3D3D !important;
+}
+
+.captions{
+    color: #545454 !important;
+}
+
+.link-caption{
+    color: #545454 !important;
+}
+
+.link-caption:hover{
+    color: #252525 !important;
+}
+
+.btn-custom{
+    background-color: #947F57 !important;
+    color: #3D3D3D !important;
+}
+
+.btn-custom:hover{
+    background-color: #7a6745 !important;
+    
+}
+
+.img-fit{
+    min-width: 435px !important;
+    max-height: 30rem !important;
+    object-fit: contain !important;
+}
