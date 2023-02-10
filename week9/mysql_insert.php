@@ -11,8 +11,8 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO acfidelino_myguests (firstname, lastname, email, gender, comments, website)
-VALUES ('$name', '$website', '$email', '$gender', '$comment', '$website')";
+$sql = "INSERT INTO acfidelino_myguests (name, email, gender, comments, website)
+VALUES ('$name', '$email', '$gender', '$comment', '$website')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
