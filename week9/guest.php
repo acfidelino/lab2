@@ -18,9 +18,9 @@
 
     <?php
         $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "webprogss211db";
+        $username = "webprogss211";
+        $password = "webprogss211";
+        $dbname = "webprogss211";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -29,7 +29,7 @@
             die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT * FROM myguests";
+        $sql = "SELECT * FROM acfidelino_myguests";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {

@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "webprogss211db";
+$username = "webprogss211";
+$password = "webprogss211";
+$dbname = "webprogss211";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -11,7 +11,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO myguests (firstname, lastname, email, gender, comments, website)
+$sql = "INSERT INTO acfidelino_myguests (firstname, lastname, email, gender, comments, website)
 VALUES ('$name', '$website', '$email', '$gender', '$comment', '$website')";
 
 if ($conn->query($sql) === TRUE) {
