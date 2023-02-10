@@ -50,7 +50,7 @@
             echo "<tbody>
                     <tr>
                         <td>".$row["id"]."</td>
-                        <td>".$row["firstname"]." ".$row["lastname"]."</td>
+                        <td>".$row["name"]."</td>
                         <td>".$row["gender"]."</td>
                         <td>".$row["comments"]."</td>
                         <td>".$row["email"]."</td>
