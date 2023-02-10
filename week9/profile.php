@@ -130,29 +130,58 @@ function test_input($data) {
         <div class="w3-card w3-margin w3-margin-top">
             <img src="media/candid.png" style="width:100%">
             <div class="w3-container w3-white">
-            <h2>Contact Me (WIP):</h2>
-            <p><span class="error">* required field</span></p>
-            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-            Name: <input type="text" name="name" value="<?php echo $name;?>">
-            <span class="error">* <?php echo $nameErr;?></span>
-            <br><br>
-            E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-            <span class="error">* <?php echo $emailErr;?></span>
-            <br><br>
-            Website: <input type="text" name="website" value="<?php echo $website;?>">
-            <span class="error"><?php echo $websiteErr;?></span>
-            <br><br>
-            Comment: <textarea name="comment" rows="2" cols="40"><?php echo $comment;?></textarea>
-            <br><br>
-            Gender:
-            <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-            <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-            <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
-            <span class="error">* <?php echo $genderErr;?></span>
-            <br><br>
-            <input type="submit" name="submit" value="Submit">  
+              <h2>Contact Me (WIP):</h2>
+              <p><span class="error">* required field</span></p>
+              <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+              <div class="mb-2">
+                <label for="Name"> <span class="error">*<?php echo $nameErr;?></span> 
+                  Name: 
+                </label>
+                <input type="text" class="form-control" name="name" id="Name" value="<?php echo $email;?>">
+              </div>
+              <div class="mb-2">
+                <label for="Email"> <span class="error">*<?php echo $emailErr;?></span> 
+                  Email: 
+                </label>
+                <input type="text" class="form-control" name="email" id="Email" value="<?php echo $email;?>">
+              </div>
+              <div class="mb-2">
+                <label for="Website"> <span class="error">*<?php echo $websiteErr;?></span> 
+                  Website: 
+                </label>
+                <input type="text" class="form-control" name="website" id="Website" value="<?php echo $website;?>">
+              </div>
+              <div class="form-floating mb-2">
+                <textarea class="form-control" name="comment" placeholder = "Leave a comment here" id="floatingTextarea"><?php echo $comment?></textarea> 
+                <label for="floatingTextarea">Comments:</label>
+              </div>
+              Gender:
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1" 
+                <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Female
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2"
+                <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault3"
+                <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  Other
+                </label>
+              </div>
+              <span class="error mb-2">* <?php echo $genderErr;?></span>
+              <br>
+              <input type="submit" name="submit" value="Submit">  
             </form>
-
+            <hr>
             <?php
             echo "<h2>Your Input:</h2>";
             echo $name;
@@ -164,7 +193,14 @@ function test_input($data) {
             echo $comment;
             echo "<br>";
             echo $gender;
+            echo "<br>";
+
+            if($_SERVER["REQUEST_METHOD"]=="POST"){
+              include "mysql_insert.php";
+            }
             ?>
+            <br>
+            <a href="guest.php">Click here to view the guest lists</a>
             </div>
         </div>
         <hr>
