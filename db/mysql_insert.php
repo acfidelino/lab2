@@ -13,11 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           VALUES ('$name', '$email', '$gender', '$comment', '$website')";
 
   if ($conn->query($sql) === TRUE) {
-    echo "Safe";
     header('Location: http://apcwebprog.csf.ph/~acfidelino/lab3/ci4/public/guest?query=success');
+    // echo "Safe";
   } else {
-    echo "Error: " . mysqli_error($conn);
-    // header('Location: http://apcwebprog.csf.ph/~acfidelino/lab3/ci4/public/guest?query=fail');
+    header('Location: http://apcwebprog.csf.ph/~acfidelino/lab3/ci4/public/guest?query=fail');
+    // echo "Error: " . mysqli_error($conn);
   }
 
   $conn->close();
