@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Safe";
   } else {
     // header('Location: http://apcwebprog.csf.ph/~acfidelino/lab3/ci4/public/guest?query=fail');
-    echo "fail";
+    echo mysqli_error();
   }
 
   $conn->close();
