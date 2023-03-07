@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $comment = htmlspecialchars($_POST['comment']);
   $gender = htmlspecialchars($_POST['gender']);
 
-  $sql = "INSERT INTO myguests (name, email, gender, comments, website)
+  $sql = "INSERT INTO acfidelino_myguests (name, email, gender, comments, website)
           VALUES ('$name', '$email', '$gender', '$comment', '$website')";
 
   if ($conn->query($sql) === TRUE) {
