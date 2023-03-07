@@ -9,15 +9,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $comment = htmlspecialchars($_POST['comment']);
   $gender = htmlspecialchars($_POST['gender']);
 
-  $sql = "INSERT INTO acfidelino_myguests (name, email, gender, comments, website)
+  $sql = "INSERT INTO acfidelino_myguests (name, email, gender, comment, website)
           VALUES ('$name', '$email', '$gender', '$comment', '$website')";
 
   if ($conn->query($sql) === TRUE) {
-    // header('Location: http://apcwebprog.csf.ph/~acfidelino/lab3/ci4/public/guest?query=success');
-    echo "Safe";
+    header('Location: http://apcwebprog.csf.ph/~acfidelino/lab3/ci4/public/guest?query=success');
+    // echo "Safe";
   } else {
-    // header('Location: http://apcwebprog.csf.ph/~acfidelino/lab3/ci4/public/guest?query=fail');
-    echo "Error: " . mysqli_error($conn);
+    header('Location: http://apcwebprog.csf.ph/~acfidelino/lab3/ci4/public/guest?query=fail');
+    // echo "Error: " . mysqli_error($conn);
   }
 
   $conn->close();
